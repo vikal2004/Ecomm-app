@@ -15,6 +15,7 @@ const getAllOrdersOfAllUsers = async (req, res) => {
       success: true,
       data: orders,
     });
+    
   } catch (e) {
     console.log(e);
     res.status(500).json({
